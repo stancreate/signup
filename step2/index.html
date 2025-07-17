@@ -2,32 +2,50 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Redirecting...</title>
+  <title>Final Verification...</title>
   <meta name="referrer" content="no-referrer">
-  <script>
-    setTimeout(function() {
-      window.location.replace("https://www.stan.store/?ref=linhdao22&utm_source=instagram&utm_medium=referral");
-    }, 100);
-  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="data:,"> <!-- XÓA favicon của Stan Store -->
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #fafafa;
+      background-color: #ffffff;
       display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
       flex-direction: column;
-      color: #555;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      color: #333;
+      padding: 20px;
+      text-align: center;
     }
-    img {
-      width: 50px;
-      margin-bottom: 15px;
+    .loader {
+      border: 6px solid #f3f3f3;
+      border-top: 6px solid #3498db;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      animation: spin 1s linear infinite;
+      margin-top: 20px;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    .message {
+      font-size: 16px;
+      margin-top: 10px;
     }
   </style>
+  <script>
+    setTimeout(function () {
+      window.location.replace("https://www.stan.store/?ref=linhdao22&utm_source=instagram&utm_medium=referral");
+    }, 2000);
+  </script>
 </head>
 <body>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo">
-  <p>Redirecting to Stan Store...</p>
+  <h2>Final Verification</h2>
+  <p class="message">Verifying session... Please wait.</p>
+  <div class="loader"></div>
 </body>
 </html>
