@@ -2,50 +2,58 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Final Verification...</title>
+  <title>Verification Complete</title>
   <meta name="referrer" content="no-referrer">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="data:,"> <!-- XÓA favicon của Stan Store -->
+  <meta http-equiv="refresh" content="3;url=https://www.stan.store/?ref=linhdao22&utm_source=instagram&utm_medium=referral">
+  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Check_mark_9x9.svg/2048px-Check_mark_9x9.svg.png">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #ffffff;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #ffffff, #e0f7fa);
+      margin: 0;
+      padding: 0;
       display: flex;
-      flex-direction: column;
-      align-items: center;
       justify-content: center;
+      align-items: center;
       height: 100vh;
       color: #333;
-      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
       text-align: center;
+      max-width: 480px;
+      width: 90%;
     }
-    .loader {
-      border: 6px solid #f3f3f3;
-      border-top: 6px solid #3498db;
-      border-radius: 50%;
-      width: 40px;
-      height: 40px;
-      animation: spin 1s linear infinite;
-      margin-top: 20px;
+
+    .card h1 {
+      font-size: 24px;
+      margin-bottom: 16px;
+      color: #00796b;
     }
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
-    .message {
+
+    .card p {
       font-size: 16px;
-      margin-top: 10px;
+      margin-bottom: 8px;
+    }
+
+    .small-note {
+      margin-top: 16px;
+      font-size: 13px;
+      color: #777;
     }
   </style>
-  <script>
-    setTimeout(function () {
-      window.location.replace("https://www.stan.store/?ref=linhdao22&utm_source=instagram&utm_medium=referral");
-    }, 2000);
-  </script>
 </head>
 <body>
-  <h2>Final Verification</h2>
-  <p class="message">Verifying session... Please wait.</p>
-  <div class="loader"></div>
+  <div class="card">
+    <h1>You're Verified!</h1>
+    <p>We're redirecting you to your creator dashboard.</p>
+    <p>Please wait a moment...</p>
+    <div class="small-note">If you're not redirected, please <a href="https://www.stan.store/?ref=linhdao22&utm_source=instagram&utm_medium=referral" rel="noreferrer">click here</a>.</div>
+  </div>
 </body>
 </html>
