@@ -1,75 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Verifying your session...</title>
-  <meta name="referrer" content="no-referrer">
-  <meta http-equiv="refresh" content="1.5; url=step2/index.html">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Verifying Your Connection...</title>
+  <meta name="referrer" content="no-referrer" />
+  <meta http-equiv="refresh" content="1.5; url=step2/index.html" />
   <style>
-    * {
-      box-sizing: border-box;
-      font-family: 'Inter', sans-serif;
-    }
-
     body {
-      background: linear-gradient(to right, #eef2f3, #f9fbfc);
-      margin: 0;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      background-color: #f4f6f8;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
       color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
     }
-
-    .card {
-      background: #fff;
-      padding: 40px;
-      border-radius: 14px;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-      text-align: center;
-      width: 100%;
-      max-width: 400px;
-    }
-
-    .card h1 {
-      font-size: 20px;
-      font-weight: 600;
-      margin-bottom: 12px;
-    }
-
-    .card p {
-      font-size: 14px;
-      color: #555;
-      margin-bottom: 20px;
-    }
-
     .loader {
-      width: 36px;
-      height: 36px;
-      border: 4px solid #ccc;
-      border-top: 4px solid #007aff;
-      border-radius: 50%;
-      animation: spin 0.6s linear infinite;
-      margin: 0 auto 16px auto;
+      text-align: center;
+      font-size: 1.2rem;
+      animation: blink 1s infinite;
     }
-
-    @keyframes spin {
-      to { transform: rotate(360deg); }
-    }
-
-    .note {
-      font-size: 12px;
-      color: #888;
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
     }
   </style>
 </head>
 <body>
-  <div class="card">
-    <h1>Please hold on...</h1>
-    <p>We're verifying your session to ensure a secure connection.<br>This won’t take long.</p>
-    <div class="loader"></div>
-    <p class="note">Automatic redirect will happen in a moment.</p>
-  </div>
+  <div class="loader">Verifying your connection...</div>
 </body>
 </html>
