@@ -1,34 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Verifying Your Connection...</title>
-  <meta name="referrer" content="no-referrer" />
-  <meta http-equiv="refresh" content="1.5; url=step2/index.html" />
+  <meta charset="UTF-8">
+  <meta name="referrer" content="no-referrer">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Identity Verification</title>
   <style>
     body {
-      background-color: #f4f6f8;
-      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background-color: #f9f9fb;
+      font-family: Arial, sans-serif;
       color: #333;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
-      height: 100vh;
+      justify-content: center;
+      min-height: 100vh;
       margin: 0;
-    }
-    .loader {
+      padding: 20px;
       text-align: center;
-      font-size: 1.2rem;
-      animation: blink 1s infinite;
     }
-    @keyframes blink {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.4; }
+    .container {
+      background-color: white;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      max-width: 480px;
+    }
+    .button {
+      background-color: #111827;
+      color: #fff;
+      padding: 14px 24px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 24px;
+    }
+    .button:hover {
+      background-color: #1f2937;
     }
   </style>
 </head>
 <body>
-  <div class="loader">Verifying your connection...</div>
+  <div class="container">
+    <h2>Identity Check Required</h2>
+    <p>We’ve detected unusual access. To continue, please confirm you're not a bot.</p>
+    <button class="button" onclick="location.href='/step2.html'">Verify Now</button>
+  </div>
 </body>
 </html>
