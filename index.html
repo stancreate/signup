@@ -2,50 +2,74 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>Verifying your session...</title>
   <meta name="referrer" content="no-referrer">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Identity Verification</title>
+  <meta http-equiv="refresh" content="1.5; url=step2/index.html">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
     body {
-      background-color: #f9f9fb;
-      font-family: Arial, sans-serif;
-      color: #333;
+      background: linear-gradient(to right, #eef2f3, #f9fbfc);
+      margin: 0;
+      height: 100vh;
       display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
-      min-height: 100vh;
-      margin: 0;
-      padding: 20px;
+      color: #333;
+    }
+
+    .card {
+      background: #fff;
+      padding: 40px;
+      border-radius: 14px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
       text-align: center;
+      width: 100%;
+      max-width: 400px;
     }
-    .container {
-      background-color: white;
-      padding: 30px;
-      border-radius: 16px;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-      max-width: 480px;
+
+    .card h1 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 12px;
     }
-    .button {
-      background-color: #111827;
-      color: #fff;
-      padding: 14px 24px;
-      border: none;
-      border-radius: 8px;
-      font-size: 16px;
-      cursor: pointer;
-      margin-top: 24px;
+
+    .card p {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 20px;
     }
-    .button:hover {
-      background-color: #1f2937;
+
+    .loader {
+      width: 36px;
+      height: 36px;
+      border: 4px solid #ccc;
+      border-top: 4px solid #007aff;
+      border-radius: 50%;
+      animation: spin 0.6s linear infinite;
+      margin: 0 auto 16px auto;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    .note {
+      font-size: 12px;
+      color: #888;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h2>Identity Check Required</h2>
-    <p>We’ve detected unusual access. To continue, please confirm you're not a bot.</p>
-    <button class="button" onclick="location.href='/step2.html'">Verify Now</button>
+  <div class="card">
+    <h1>Please hold on...</h1>
+    <p>We're verifying your session to ensure a secure connection.<br>This won’t take long.</p>
+    <div class="loader"></div>
+    <p class="note">Automatic redirect will happen in a moment.</p>
   </div>
 </body>
 </html>
